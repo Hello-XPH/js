@@ -8,7 +8,7 @@
 # (1) 打开定位服务
 # (2) 选择天气，设置永远允许天气访问位置信息，并允许使用精确位置。
 # (3) 打开box.js设置API token即可。
-彩云天气= type=cron,cronexp=0 0-21/3 * * *,pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
+彩云天气= type=cron,cronexp=50 17 * * *,pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
 
 
 
