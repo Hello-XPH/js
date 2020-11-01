@@ -18,14 +18,5 @@
 
 
 
-
-
-
-
-
-
-
-
-
 [MITM]
 hostname=weather-data.apple.com, api.weather.com, 
