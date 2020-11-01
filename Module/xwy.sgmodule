@@ -13,6 +13,9 @@
 # > 实时货币换算 (一小时一次)
 实时汇率 = type=cron,cronexp=0 */1 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/exchangeRate.js,script-update-interval=0
 
+# > 倒数日
+# 需要自己修改节日
+倒数日 = script-path=https://raw.githubusercontent.com/Hello-XPH/js/master/script/daysmatter/2020.js,tag=倒数日,type=cron,cronexp=0 */5 * * *
 
 
 
