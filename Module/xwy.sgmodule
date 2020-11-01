@@ -1,0 +1,31 @@
+#!name=Task - All in one By XPH
+#!desc=该模块适用于定时签到:集成全部: NobyDa、Chavy以及个人收集常用签到脚本。建议本地安装以便自定义修改签到时间。
+#!system=ios
+[Script]
+# 定时脚本
+# 彩云天气 (By Peng-YM)
+# 打开手机设置 > 隐私 > 定位服务
+# (1) 打开定位服务
+# (2) 选择天气，设置永远允许天气访问位置信息，并允许使用精确位置。
+# (3) 打开box.js设置API token即可。
+彩云天气= type=cron,cronexp=0 0-21/3 * * *,pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[MITM]
+hostname=weather-data.apple.com, api.weather.com, 
