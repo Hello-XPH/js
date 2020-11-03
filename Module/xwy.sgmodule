@@ -40,7 +40,7 @@ GitHub监控= type=cron,cronexp=0 */1 * * *,script-path=https://raw.githubuserco
 PSN会免= type=cron,cronexp=0 9 1 * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/psn.js
 
 # > 热门监控 (By Evilbutcher)
-热门监控 = type=cron,cronexp="30 0 8-22/2 * * *",script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hotsearch/hot.js,wake-system=true,timeout=600
+热门监控 = type=cron,cronexp="30 0 8-22/2 * * *",script-path=https://raw.githubusercontent.com/Hello-XPH/js/script/script/github.js,wake-system=true,timeout=600
 
 # > 京东价格提醒(By toulanboy)
 京东价格提醒 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/jd_price_detect/jd_price_detect.js
