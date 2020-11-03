@@ -1,6 +1,11 @@
 #!name=Task - All in one By XPH
 #!desc=该模块适用于定时签到:集成全部: NobyDa、Chavy以及个人收集常用签到脚本。建议本地安装以便自定义修改签到时间。
 #!system=ios
+
+# 5位      分/时/日/月/星期
+# 6位   秒/分/时/日/月/星期
+# 0为星期天，0～6 为一周
+
 [Script]
 # 定时脚本
 # 彩云天气 (By Peng-YM)
@@ -15,12 +20,28 @@
 
 # > 倒数日
 # 需要自己修改节日
-倒数日 = script-path=https://raw.githubusercontent.com/Hello-XPH/js/master/script/daysmatter/2020.js,tag=倒数日,type=cron,cronexp=0 */5 * * *
+倒数日 = script-path=https://raw.githubusercontent.com/Hello-XPH/js/master/script/daysmatter/2020.js,tag=倒数日,type=cron,cronexp=0 */2 * * *
 
+# > App价格版本监控
+App价格版本监控 = type=cron,cronexp=0 0 * * * *,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/appstore/AppMonitor.js,script-update-interval=0
 
+# > TestFlight公测监控 (By @syzzzf)
+# 需要自己填appkey
+TestFlight公测监控 = script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/testflight.js,type=cron,cronexp=0 0 * * * *
 
+# > 一言
+一言+历史上的今天 = script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Meeta/Surge/Scripting/Calendar.js,type=cron,cronexp=0 0 8 * * *
 
+# > 每日一句+ 蚂蚁森林收能量
+每日一句+蚂蚁森林收能量 = script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/yichahucha/cron_daily.js,type=cron,cronexp=0 30 7 * * *
 
+# > 世界时间
+世界时间 = script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/time.js,tag=世界时间,type=cron,cronexp=0 0 8 * * *
+
+# > GitHub监控(By Peng-YM)
+# name: "",//填写仓库名称，可自定义
+# file_names:[],//可选参数。若需要监控具体文件或目录，请填写路径
+GitHub监控= type=cron,cronexp=40 13 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js
 
 
 
