@@ -25,31 +25,6 @@
 # 3. id中填写271590即可, name中填写名字。
 Steam价格监控= type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/steam.js
 
-# > 汇率监控(By Peng-YM)
-汇率监控= type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js
-
-# > Epic周免(By Peng-YM)
-Epic周免= type=cron,cronexp=0 8 */7 * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/epic.js
-
-# > PSN会免(By Peng-YM)
-PSN会免= type=cron,cronexp=0 9 1 * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/psn.js
-
-# > 热门监控 (By Evilbutcher)
-热门监控 = type=cron,cronexp="30 0 8-22/2 * * *",script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hotsearch/hot.js,wake-system=true,timeout=600
-
-# > 京东价格提醒(By toulanboy)
-京东价格提醒 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/jd_price_detect/jd_price_detect.js
-
-# > 微博通知  (By @zZPiglet)
-# 进入 https://m.weibo.cn 并登陆，获取cookie后进入boxjs配置
-微博通知 =type=cron,cronexp=0 * * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js
-
-# > 哔哩哔哩番剧监控 (By @lowking0415)
-哔哩哔哩番剧监控 = type=cron,cronexp="0 0 0,1 * * ?",wake-system=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bilibili/bangumiMonitor.js
-
-# > 叮叮钟 (By @yichahucha)
-cron "0 9,18 * * 1-5" script-path=https://raw.githubusercontent.com/yichahucha/surge/master/clock_in.js
-
 # 签到脚本
 #  NobyDa
 # > 京东
