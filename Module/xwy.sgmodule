@@ -43,7 +43,7 @@ PSN会免= type=cron,cronexp=0 9 1 * *,script-path=https://raw.githubusercontent
 
 # > 微博通知  (By @zZPiglet)(每二十分钟执行一次)
 # 进入 https://m.weibo.cn 并登陆，获取cookie后进入boxjs配置
-微博通知 =type=cron,cronexp=* * * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js
+微博通知 =type=cron,cronexp=*/5 * * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js
 http-request ^https:\/\/m\.weibo\.cn\/feed\/ script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js
 
 # > 哔哩哔哩番剧监控 (By @lowking0415)
