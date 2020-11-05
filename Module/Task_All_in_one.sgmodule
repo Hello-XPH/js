@@ -24,9 +24,6 @@ Steam价格监控= type=cron,cronexp=8 0 * * *,script-path=https://raw.githubuse
 
 # 签到脚本
 #  NobyDa
-# > 京东
-京东 = type=cron,cronexp=0 0 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
-
 # > 爱奇艺
 #爱奇艺 = type=cron,cronexp=5 0 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,script-update-interval=0
 
@@ -194,14 +191,6 @@ Zaker = type=cron,cronexp=55 3 0 * * *,script-path=https://raw.githubusercontent
 微信小程序-同程艺龙 = type=cron,cronexp=20 5 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/tongc_sign.js,script-update-interval=0
 微信小程序-同程艺龙info.js = type=cron,cronexp=20 5 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/tongc_info.js,script-update-interval=0
 
-# > 京东到家 (@barrymchen, @GideonSenku & @Macsuny)
-# APP登陆账号后，点击主页’签到‘,即可
-京东到家 = type=cron,cronexp=25 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js,script-update-interval=0
-
-# > 微信小程序-来客有礼 (By @Macsuny)
-# 微信搜索’来客有礼‘小程序,登陆京东账号，点击’领京豆->翻牌‘
-来客有礼 = type=cron,cronexp=30 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,script-update-interval=0
-
 # > 微博 & 微博钱包 (By @Macsuny)
 #1.打开微博App获取Cookie.获取后请注释或禁用Cookie
 #2.打开微博钱包点击签到，获取Cookie，
@@ -224,37 +213,6 @@ Zaker = type=cron,cronexp=55 3 0 * * *,script-path=https://raw.githubusercontent
 # > 微信小程序-喜马拉雅 (By @makexp)
 # 微信小程序 - 喜马拉雅 - 我的： 签到 “ 获取 Cookie
 微信小程序-喜马拉雅 = type=cron,cronexp=5 6 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/xmly_wc.js
-
-# > 京东农场 (By liuxiaoyucc、lxk0301 & iepngs)
-# 京东App - 右下角"我的"- 游戏与互动- 东东农场
-京东农场= type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_fruit.js,wake-system=1
-
-# > 京东萌宠 (By liuxiaoyucc、lxk0301 & iepngs)
-# 京东App - 右下角"我的"- 游戏与互动-东东萌宠
-京东萌宠= type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_pet.js,wake-system=1
-
-# > 京东宠汪汪 (By uniqueque、lxk0301 & iepngs)
-# 京东App - 右下角"我的"- 游戏与互动-宠汪汪
-京东宠汪汪= type=cron,cronexp=0 */3 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy.js,wake-system=1
-宠汪汪积分兑换奖品= type=cron,cronexp=0 0 0-16/8 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_reward.js,wake-system=1
-宠汪汪喂食= type=cron,cronexp=0 0 */3 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js,wake-system=1
-宠汪汪偷好友积分与狗粮= type=cron,cronexp=0 0,6 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_steal.js,wake-system=1
-
-# > 京东种豆得豆 (By uniqueque、lxk0301 & iepngs)
-# 京东App - 右下角"我的"- 游戏与互动-种豆得豆
-京东种豆得豆= type=cron,cronexp=8 7-21/3 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_plantBean.js,wake-system=1
-
-# > 京东加速 (By lxk0301)
-# 京东App - 右下角"我的"- 游戏与互动-天天加速
-京东加速=type=cron,cronexp=0 */3 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_speed.js,wake-system=1
-
-# > 取关京东店铺商品 (By lxk0301)
-取关京东店铺商品 = type=cron,cronexp=55 23 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_unsubscribe.js
-
-# > 京小超(By lxk0301)
-# 京东App - 右下角"我的"- 游戏与互动-京小超
-京小超-任务= type=cron,cronexp=0 5 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_superMarket.js,wake-system=1
-京小超-小费= type=cron,cronexp=30 7 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_blueCoin.js,wake-system=1
 
 # > 微博超话 (By Evilbutcher & toulanboy)
 # 1.打开微博APP，"我的"， "超话社区"， "底部栏--我的"， "关注"， 弹出通知，提示获取已关注超话链接成功。
